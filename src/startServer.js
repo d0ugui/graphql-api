@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 
 function startServer({ typeDefs, resolvers }) {
   mongoose.connect('mongodb://localhost:27017/graphql', {
+    authSource: "admin",
+    user: "root",
+    pass: "root",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -11,4 +14,4 @@ function startServer({ typeDefs, resolvers }) {
   server.listen().then(({ url }) => console.log(`🔥 Server started at ${url}`));
 }
 
-export default startServer;''
+export default startServer;
