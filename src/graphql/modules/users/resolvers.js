@@ -23,7 +23,7 @@ export default {
   },
   Subscription: {
     userAdded: {
-      subscribe: async (obj, args, { pubsub }) => await pubsub.asyncIterator('USER_ADDED'),
+      subscribe: (obj, args, { pubsub }) => pubsub.asyncIterator('USER_ADDED'),
     }
   }
 };
