@@ -1,6 +1,6 @@
 ## 📖 Projeto
 
-O projeto consiste em uma API desenvolvida em GraphQL, integrada ao Mongoose. O banco de dados foi virtualizado utilizando o Docker. A aplicação realiza operações de CRUD para duas entidades, Usuários e Posts, é possui Real-time(WebSocket) através do GraphQL Subscriptions. 
+O projeto consiste em uma API desenvolvida em GraphQL, integrada ao Mongoose. O banco de dados foi virtualizado utilizando o Docker. A aplicação realiza operações de CRUD para duas entidades, Usuários e Posts, e possui Real-time(WebSocket) através do GraphQL Subscriptions. 
 
 ## 🧪 Tecnologias
 
@@ -21,10 +21,10 @@ Clone o projeto e acesse a pasta do mesmo.
 $ git clone git@github.com:d0ugui/graphql-api.git
 $ cd graphql-api
 ```
-
+Configurando banco de dados
 ```bash
-# É necessário configurar o Mongoose dentro do arquivo startServer.js
-$ mongoose.connect()...
+# Dentro do arquivo startServer.js, configure os dados de conexão
+$ mongoose.connect('', {})...
 ```
 
 Para iniciá-lo, siga os passos abaixo:
