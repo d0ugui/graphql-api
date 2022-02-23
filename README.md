@@ -34,7 +34,7 @@ Para iniciá-lo, siga os passos abaixo:
 $ yarn or npm
 
 # Iniciar o projeto
-$ yarn start or npm start
+$ yarn dev or npm run dev
 ```
 
 O app estará disponível no seu browser pelo endereço http://localhost:4000/graphql
